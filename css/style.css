@@ -1,5 +1,89 @@
+/*
+	Primary Style
+*/
+
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
+body{
+	background-color: #EAEAEA;
+}
+
+/*
+	Header
+*/
+
+header > div{
+	text-align: center;
+}
+
+header > div:first-child{
+	background-color: #FFF;
+	box-shadow: 0px 0px 3px black;
+	padding: 8px;
+}
+
+.looking-map form > div:first-child{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.looking-map form > div:first-child input{
+	background: transparent;
+	border: none;
+	text-align: center;
+}
+
+.looking-map form > div:last-child{
+	background-color: #F6F6F6;
+}
+
+/*
+	Main
+*/
+
+.fonctionnement{
+	background-color: #FFF;
+}
+
+.fonctionnement > div{
+	display: flex;
+	flex-direction: column;
+}
+
+.fonctionnement a{
+	text-align: center;
+	background-color: #F6F6F6;
+	border:  1px solid black;
+	border-radius: 15px;
+	color: initial;
+	display: flex;
+	justify-content: center;
+	margin: 10px auto;
+	position: relative;
+	text-decoration: none;
+	height: 70px;
+	width: 90%;
+}
+
+.fonctionnement .a{
+	position:  absolute;
+	top: 0;
+}
+
+/*
+	Footer
+*/
+
+footer{
+	background-color: #353535;
+}
+
+
+
+

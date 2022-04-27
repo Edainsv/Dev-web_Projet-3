@@ -1,5 +1,7 @@
 /*
 	Primary Style
+	Primaire	 Secondaire	 Tertiaire
+	#9356DC		 #FF79DA	 #99E2D0
 */
 
 *{
@@ -76,7 +78,7 @@ header > div:first-child{
 	text-align: center;
 	text-decoration: none;
 	height: 70px;
-	width: 90%;
+	width: 85%;
 }
 
 .fonctionnement a > span:first-child{
@@ -105,7 +107,35 @@ header > div:first-child{
 
 footer{
 	background-color: #353535;
+	color: #FFF;
 }
+
+footer > div{
+	margin: auto;
+	width:  80%;
+}
+
+footer h3{
+	padding: 10px 0px;
+}
+
+footer ul > li{
+	list-style: none;
+	margin: 5px 0px;
+}
+
+footer li > i{
+	width: 20px;
+}
+
+footer a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+
+
 
 
 

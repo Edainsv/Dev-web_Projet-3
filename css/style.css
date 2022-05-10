@@ -88,6 +88,24 @@ header > div:first-child{
 	padding: 0 20px;
 }
 
+.heading-back{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.heading-back a{
+	left: 3%;
+	position: absolute;
+	color: initial;
+}
+
+.heading-img img{
+	height: 235px;
+	object-fit: cover;
+	width: 100%;
+}
+
 /*
 	Main
 */
@@ -212,6 +230,7 @@ header > div:first-child{
 
 footer{
 	background-color: #353535;
+	border-left: 1px solid #EAEAEA;
 	color: #FFF;
 }
 

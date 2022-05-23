@@ -1,0 +1,342 @@
+// Général style
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EAEAEA;
+}
+
+h2 {
+	margin-bottom: 10px;
+	font-weight: initial;
+}
+
+.burger-fa i {
+	margin-right: -3px;
+}
+
+.logo{
+	width: 40%;
+}
+
+section img {
+	object-fit: cover;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.heading-img img{
+	height: 245px;
+	width: 100%;
+}
+
+// Header
+header {
+	div{
+		text-align: center;
+
+		&:first-child {
+			background-color: #FFF;
+			box-shadow: 0px 0px 3px black;
+			max-height: 70px;
+			padding-bottom: 10px;
+			padding-top: 20px;
+		}
+	}
+}
+
+.looking-map {
+	& form > div:first-child {
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+		text-align: center;
+
+		input {
+			background: none;
+			border: none;
+			outline: none;
+			padding: 0px 6px;
+			text-align: center;
+			width: 130px;
+		}
+	}
+
+	& form > div:last-child {
+		background-color: #F6F6F6;
+		padding: 30px 0px;
+
+		h1 {
+			font-size: 1.5em;
+			padding: 0 20%;
+		}
+
+		p {
+			font-size: 1.1em;
+			margin-top: 10px;
+			padding: 0 15%;
+		}
+
+		input {
+			background: linear-gradient(to top, #9356DC, #FF79DA);
+			border: none;
+			border-radius: 20px;
+			color: #FFF;
+			font-size: 0.9em;
+			height: 40px;
+			margin-top: 20px;
+			padding: 0 20px;
+		}
+	}
+}
+
+.heading-back {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		left: 3%;
+		position: absolute;
+	}
+}
+
+// Section
+/********************
+*	Page accueil	*
+*********************/
+.fonctionnement {
+	background-color: #FFF;
+
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	& > div {
+		margin: auto;
+		padding: 30px 0px;
+		width: 85%;
+	}
+
+	a {
+		align-items: center;
+		background-color: #F6F6F6;
+		border-radius: 15px;
+		box-shadow: 0px 6px 12px -10px black;
+		display: flex;
+		padding-left: 30px;
+		margin: 10px auto;
+		position: relative;
+		text-align: center;
+		height: 70px;
+		width: 100%;
+	}
+
+	a > span:first-child {
+		background-color: #9356DC;
+		border-radius: 50%;
+		color: #FFF;
+		position: absolute;
+		left: -11px;
+		height: 22px;
+		line-height: 22px;
+		width: 22px;
+	}
+
+	a > span:last-child {
+		display: flex;
+
+		span {
+			display: block;
+			margin-left: 20px;
+		}
+	}
+}
+
+
+/********************
+*	Autre pages		*
+*********************/
+.menu {
+	padding: 1em;
+
+	& > div > div {
+		cursor: pointer;
+		height: 70px;
+		background-color: #FFF;
+		margin-bottom: 1em;
+		border-radius: 1em;
+		padding: 1em;
+		box-shadow: 1px 1px 6px rgba(0,0,0, 0.2);
+		position: relative;
+
+		span:first-child {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		& > div:first-child {
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+	}
+}
+
+// Restaurant
+.restaurant {
+	& > div {	
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		padding: 30px 0px;
+		width: 85%;
+	}
+
+	a {
+		background-color: #FFF;
+		border-radius: 15px;
+		box-shadow: 0px 2px 10px -7px black;
+		display: block;
+		height: 200px;
+		margin-bottom: 20px;
+		position:  relative;
+	}
+
+	img {
+		border-radius: 15px;
+		object-position: center;
+		height: 100%;
+		width: 100%;
+	}
+
+	a > span {
+		background-color: #FFF;
+		border-radius: 0px 0px 15px 15px;
+		bottom: 0;
+		display: block;
+		height: 35%;
+		padding: 10px;
+		position: absolute;
+		width: 100%;
+
+		span {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+		}
+
+		span > span:first-child {
+			font-weight: bold;
+		}
+
+		i {
+			align-items: center;
+			display: flex;
+			font-size: 1.4em;
+			padding-bottom: 10px;
+			padding-right: 15px;
+		}
+	}
+}
+
+// Footer
+footer {
+	background-color: #353535;
+	border-left: 1px solid #EAEAEA;
+	color: #FFF;
+
+	& > div {
+		margin: auto;
+		padding-bottom: 25px;
+		padding-top: 10px;
+		width:  80%;
+	}
+
+	img {
+		margin: 10px 0px;
+		height:  20px;
+	}
+
+	ul > li {
+		margin: 5px 0px;
+	}
+
+	li> i {
+		width: 20px;
+	}
+
+	a {
+		color: #FFF;
+	}
+}
+
+
+// Animation
+.menu div > div {
+
+	.menu-hover {
+		display: none;
+	}
+
+	&:hover .menu-hover {
+		animation: slidePrice .5s;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #99E2D0;
+		height: 100%;
+		width: 70px;
+		right: 0;
+		top: 0;
+		border-top-right-radius: 1em;
+		border-bottom-right-radius: 1em;
+
+		i {
+			animation: rotateCheck .5s;
+			color: #FFF;
+			font-size: 1.5em;
+		}
+	}
+}
+
+@keyframes slidePrice {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 75px;
+	}
+}
+
+@keyframes rotateCheck {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes backHover {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 200px;
+	}
+}

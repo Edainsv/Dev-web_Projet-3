@@ -1,270 +1,295 @@
-/*
-	Primary Style
-	Primaire	 Secondaire	 Tertiaire
-	#9356DC		 #FF79DA	 #99E2D0
-*/
-
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	background-color: #EAEAEA;
+body {
+  background-color: #EAEAEA;
 }
 
-h2{
-	margin-bottom: 10px;
+h2 {
+  margin-bottom: 10px;
+  font-weight: initial;
 }
 
-.burger-fa > i:first-child {
-	margin-right: -3px;
+.burger-fa i {
+  margin-right: -3px;
 }
 
-.logo{
-	width: 40%;
+.logo {
+  width: 40%;
 }
 
-/*
-	Header
-*/
-
-header > div{
-	text-align: center;
+section img {
+  object-fit: cover;
 }
 
-header > div:first-child{
-	background-color: #FFF;
-	box-shadow: 0px 0px 3px black;
-	padding-bottom: 10px;
-	padding-top: 20px;
+a {
+  color: initial;
+  text-decoration: none;
 }
 
-.looking-map form > div:first-child{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding: 10px;
+li {
+  list-style-type: none;
 }
 
-.looking-map form > div:first-child input{
-	background: none;
-	border: none;
-	outline: none;
-	padding: 0px 6px;
-	text-align: center;
-	width: 130px;
+.heading-img img {
+  height: 245px;
+  width: 100%;
 }
 
-.looking-map form > div:last-child{
-	background-color: #F6F6F6;
+header div {
+  text-align: center;
+}
+header div:first-child {
+  background-color: #FFF;
+  box-shadow: 0px 0px 3px black;
+  max-height: 70px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
-.titre{
-	padding: 30px 0px;
+.looking-map form > div:first-child {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+.looking-map form > div:first-child input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0px 6px;
+  text-align: center;
+  width: 130px;
+}
+.looking-map form > div:last-child {
+  background-color: #F6F6F6;
+  padding: 30px 0px;
+}
+.looking-map form > div:last-child h1 {
+  font-size: 1.5em;
+  padding: 0 20%;
+}
+.looking-map form > div:last-child p {
+  font-size: 1.1em;
+  margin-top: 10px;
+  padding: 0 15%;
+}
+.looking-map form > div:last-child input {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border: none;
+  border-radius: 20px;
+  color: #FFF;
+  font-size: 0.9em;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
-.titre h1{
-	font-size: 1.5em;
-	padding: 0 20%;
+.heading-back {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-back a {
+  left: 3%;
+  position: absolute;
 }
 
-.titre p{
-	font-size: 1.1em;
-	margin-top: 10px;
-	padding: 0 15%;
-
+/********************
+*	Page accueil	*
+*********************/
+.fonctionnement {
+  background-color: #FFF;
+}
+.fonctionnement div {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement > div {
+  margin: auto;
+  padding: 30px 0px;
+  width: 85%;
+}
+.fonctionnement a {
+  align-items: center;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px -10px black;
+  display: flex;
+  padding-left: 30px;
+  margin: 10px auto;
+  position: relative;
+  text-align: center;
+  height: 70px;
+  width: 100%;
+}
+.fonctionnement a > span:first-child {
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: #FFF;
+  position: absolute;
+  left: -11px;
+  height: 22px;
+  line-height: 22px;
+  width: 22px;
+}
+.fonctionnement a > span:last-child {
+  display: flex;
+}
+.fonctionnement a > span:last-child span {
+  display: block;
+  margin-left: 20px;
 }
 
-.titre input{
-	background: linear-gradient(to top, #9356DC, #FF79DA);
-	border: none;
-	border-radius: 20px;
-	color: #FFF;
-	font-size: 0.9em;
-	height: 40px;
-	margin-top: 20px;
-	padding: 0 20px;
+/********************
+*	Autre pages		*
+*********************/
+.menu {
+  padding: 1em;
+}
+.menu > div > div {
+  cursor: pointer;
+  height: 70px;
+  background-color: #FFF;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.menu > div > div span:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.menu > div > div > div:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-.heading-back{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.restaurant > div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 30px 0px;
+  width: 85%;
 }
-.heading-back a{
-	left: 3%;
-	position: absolute;
-	color: initial;
+.restaurant a {
+  background-color: #FFF;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px -7px black;
+  display: block;
+  height: 200px;
+  margin-bottom: 20px;
+  position: relative;
 }
-
-.heading-img img{
-	height: 235px;
-	object-fit: cover;
-	width: 100%;
+.restaurant img {
+  border-radius: 15px;
+  object-position: center;
+  height: 100%;
+  width: 100%;
 }
-
-/*
-	Main
-*/
-
-/* Fonctionnement */
-.fonctionnement{
-	background-color: #FFF;
+.restaurant a > span {
+  background-color: #FFF;
+  border-radius: 0px 0px 15px 15px;
+  bottom: 0;
+  display: block;
+  height: 35%;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
 }
-
-.fonctionnement > div{
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	padding: 30px 0px;
-	width: 85%;
+.restaurant a > span span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
-
-.fonctionnement > div > div{
-	display: flex;
-	flex-direction: column;
+.restaurant a > span span > span:first-child {
+  font-weight: bold;
 }
-
-.fonctionnement a{
-	align-items: center;
-	background-color: #F6F6F6;
-	border-radius: 15px;
-	box-shadow: 0px 6px 12px -10px black;
-	color: initial;
-	display: flex;
-	padding-left: 30px;
-	margin: 10px auto;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	height: 70px;
-	width: 100%;
+.restaurant a > span i {
+  align-items: center;
+  display: flex;
+  font-size: 1.4em;
+  padding-bottom: 10px;
+  padding-right: 15px;
 }
 
-.fonctionnement a > span:first-child{
-	background-color: #9356DC;
-	border-radius: 50%;
-	color: #FFF;
-	position: absolute;
-	left: -11px;
-	height: 22px;
-	line-height: 22px;
-	width: 22px;
+footer {
+  background-color: #353535;
+  border-left: 1px solid #EAEAEA;
+  color: #FFF;
+}
+footer > div {
+  margin: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  width: 80%;
+}
+footer img {
+  margin: 10px 0px;
+  height: 20px;
+}
+footer ul > li {
+  margin: 5px 0px;
+}
+footer li > i {
+  width: 20px;
+}
+footer a {
+  color: #FFF;
 }
 
-.fonctionnement a > span:last-child{
-	display: flex;
+.menu div > div .menu-hover {
+  display: none;
+}
+.menu div > div:hover .menu-hover {
+  animation: slidePrice 0.5s;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 70px;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.menu div > div:hover .menu-hover i {
+  animation: rotateCheck 0.5s;
+  color: #FFF;
+  font-size: 1.5em;
 }
 
-.fonctionnement a > span:last-child span{
-	display: block;
-	margin-left: 20px;
+@keyframes slidePrice {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75px;
+  }
+}
+@keyframes rotateCheck {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes backHover {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
 }
 
-
-/* Restaurant */
-.restaurant > div{
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	padding: 30px 0px;
-	width: 85%;
-}
-
-.restaurant a{
-	background-color: #FFF;
-	border-radius: 15px;
-	box-shadow: 0px 2px 10px -7px black;
-	color:  initial;
-	display: block;
-	height: 200px;
-	margin-bottom: 20px;
-	position:  relative;
-	text-decoration:  none;
-}
-
-.restaurant img{
-	border-radius: 15px;
-	object-fit: cover;
-	object-position: center;
-	height: 100%;
-	width: 100%;
-}
-
-.restaurant a > span{
-	background-color: #FFF;
-	border-radius: 0px 0px 15px 15px;
-	bottom: 0;
-	display: flex;
-	height: 35%;
-	padding: 10px;
-	position: absolute;
-	width: 100%;
-}
-
-.restaurant a > span > span{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-.restaurant a > span > span > span:first-child{
-	font-weight: bold;
-}
-
-.restaurant a > span > i{
-	align-items: center;
-	display: flex;
-	font-size: 1.4em;
-	padding-bottom: 10px;
-	padding-right: 15px;
-}
-
-/*
-	Footer
-*/
-
-footer{
-	background-color: #353535;
-	border-left: 1px solid #EAEAEA;
-	color: #FFF;
-}
-
-footer > div{
-	margin: auto;
-	padding-bottom: 25px;
-	padding-top: 10px;
-	width:  80%;
-}
-
-footer img{
-	margin: 10px 0px;
-	height:  20px;
-	fill: #FFF;
-}
-
-footer ul > li{
-	list-style: none;
-	margin: 5px 0px;
-}
-
-footer li > i{
-	width: 20px;
-}
-
-footer a{
-	color: #FFF;
-	text-decoration: none;
-}
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */

@@ -249,6 +249,84 @@ header {
 	}
 }
 
+.card {
+	display: flex;
+	box-shadow: 1px 1px 6px rgba(0,0,0, 0.2);
+	border-radius: 1em;
+	margin-bottom: 1em;
+	cursor: pointer;
+	height: 70px;
+	background-color: #FFF;
+	justify-content: space-between;
+	overflow: hidden;
+
+	.card--header {
+		display: flex;
+		flex-direction: column;
+		padding: 0.5em;
+		width: 100%; // Passe à 80% au survol
+		transition: all .75s;
+
+		& > span {
+			display: flex;
+			align-items:center;
+			height: 50%;
+		}
+
+		& > span:last-child {
+			display: flex;
+			justify-content: space-between;
+
+			& .no-overflow {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			& span:last-child {
+				font-size: 1.2em;
+				font-weight: bold;
+				min-width: 40px;
+				text-align: right;
+			}
+		}
+	}
+
+	.card--animation-checked {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 0%; // Passe à 20% au survol
+		max-width: 70px;
+		background-color: #99E2D0;
+		border-bottom-right-radius: 1em;
+		border-top-right-radius: 1em;
+		overflow: hidden;
+		transition: all .5s;
+
+		i {
+			color: #FFF;
+			font-size: 1.5em;
+		}
+	}
+
+	&:hover {
+		.card--header {
+			transition: width .5s;
+			width: 80%;
+		}
+
+		.card--animation-checked {
+			transition: width .5s;
+			width: 20%;
+
+			i {
+				animation: rotateCheck .5s .05s;
+			}
+		}
+	}
+}
+
 // Restaurant
 .restaurant {
 	& > div {	
@@ -339,57 +417,7 @@ footer {
 	}
 }
 
-
-// Animations CSS
-.menu > div {
-	animation: sectionApparition 2s;
-}
-
-.menu div > div {
-	.menu-hover {
-		display: none;
-	}
-
-	&:hover .menu-hover {
-		animation: slidePrice 1s;
-		position: absolute;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: #99E2D0;
-		height: 100%;
-		width: 70px;
-		right: 0;
-		top: 0;
-		border-top-right-radius: 1em;
-		border-bottom-right-radius: 1em;
-
-		i {
-			animation: rotateCheck .5s;
-			color: #FFF;
-			font-size: 1.5em;
-		}
-	}
-}
-
-@keyframes sectionApparition {
-	0% {
-		height: 0px;
-	}
-	100% {
-		height: 100%;
-	}
-}
-
-@keyframes slidePrice {
-	0% {
-		width: 0px;
-	}
-	100% {
-		width: 75px;
-	}
-}
-
+// Rotation de l'icône "checked"
 @keyframes rotateCheck {
 	0% {
 		transform: rotate(0);
@@ -400,6 +428,7 @@ footer {
 	}
 }
 
+// Blocs de la page index
 @keyframes bg-fonctionnement{
 	0% {
 		background-color: #F6F6F6;
@@ -409,6 +438,7 @@ footer {
 	}
 }
 
+// Boutons général
 @keyframes btn-transition {
 	from {
 		transform: scale(1.0);

@@ -65,9 +65,14 @@ li {
 	list-style-type: none;
 }
 
-.heading-img img{
+.heading-img {
 	height: 245px;
 	width: 100%;
+
+	img{
+		height: 100%;
+		width: 100%;
+	}
 }
 
 // Header

@@ -63,8 +63,12 @@ li {
   list-style-type: none;
 }
 
-.heading-img img {
+.heading-img {
   height: 245px;
+  width: 100%;
+}
+.heading-img img {
+  height: 100%;
   width: 100%;
 }
 

@@ -10,6 +10,19 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+main.main {
+	position: relative;
+	margin-top: -30px;
+	width: 100%;
+
+	section {
+		background-color: #EAEAEA;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+
+	}
+}
+
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;

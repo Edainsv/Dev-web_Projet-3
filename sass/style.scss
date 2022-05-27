@@ -85,6 +85,7 @@ li {
 	img{
 		height: 100%;
 		width: 100%;
+		object-fit: cover;
 	}
 }
 
@@ -240,6 +241,43 @@ header {
 		margin-bottom: 50px !important;
 		display: block;
 		margin: auto;
+	}
+}
+
+.animation-cards {
+	.card {
+		animation: opacity 1s both;
+	}
+
+	#delay-1 {
+		animation-delay: 0.1s;
+	}
+	#delay-2 {
+		animation-delay: 0.2s;
+	}
+	#delay-3 {
+		animation-delay: 0.3s;
+	}
+	#delay-4 {
+		animation-delay: 0.4s;
+	}
+	#delay-5 {
+		animation-delay: 0.5s;
+	}
+	#delay-6 {
+		animation-delay: 0.6s;
+	}
+	#delay-7 {
+		animation-delay: 0.7s;
+	}
+	#delay-8 {
+		animation-delay: 0.8s;
+	}
+	#delay-9 {
+		animation-delay: 0.9s;
+	}
+	#delay-10 {
+		animation-delay: 1.0s;
 	}
 }
 
@@ -444,5 +482,15 @@ footer {
 	}
 	to {
 		transform: scale(1.1);
+	}
+}
+
+// Apparition des menu
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }

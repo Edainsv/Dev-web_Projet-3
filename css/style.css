@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --terciary-color: #99E2D0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,7 +38,7 @@ h2 {
 }
 
 .btn-submit {
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(to top, var(--primary-color), #FF79DA);
   border: none;
   border-radius: 20px;
   color: #FFF;
@@ -48,7 +54,7 @@ h2 {
 
 .titre-underline {
   display: block;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid var(--terciary-color);
   width: 60px;
   margin-bottom: 1em;
 }
@@ -166,7 +172,7 @@ header div:first-child {
   animation: bg-fonctionnement 0.75s forwards;
 }
 .fonctionnement a > span:first-child {
-  background-color: #9356DC;
+  background-color: var(--primary-color);
   border-radius: 50%;
   color: #FFF;
   position: absolute;
@@ -296,7 +302,7 @@ header div:first-child {
   justify-content: center;
   width: 0%;
   max-width: 70px;
-  background-color: #99E2D0;
+  background-color: var(--terciary-color);
   border-bottom-right-radius: 1em;
   border-top-right-radius: 1em;
   overflow: hidden;
@@ -451,7 +457,7 @@ footer a {
   margin: 8px;
   border-radius: 50%;
   border: 12px solid #fff;
-  border-color: #99E2D0 transparent #FF79DA transparent;
+  border-color: var(--terciary-color) transparent #FF79DA transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 

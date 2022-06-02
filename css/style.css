@@ -38,7 +38,7 @@ h2 {
 }
 
 .btn-submit {
-  background: linear-gradient(to top, var(--primary-color), #FF79DA);
+  background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
   border: none;
   border-radius: 20px;
   color: #FFF;
@@ -90,12 +90,42 @@ li {
   object-fit: cover;
 }
 
+.icon-heart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  max-width: 40px;
+  width: 1.4em;
+}
+.icon-heart i:first-child {
+  position: relative;
+  cursor: pointer;
+}
+.icon-heart :hover {
+  background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon-heart .icon-heart--hover i {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon-heart .icon-heart--hover:hover i {
+  animation: heart-animation 1.2s forwards;
+}
+
 header div {
   text-align: center;
 }
 header div:first-child {
   background-color: #FFF;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 4px #000;
   max-height: 70px;
   padding-bottom: 10px;
   padding-top: 20px;
@@ -113,7 +143,8 @@ header div:first-child {
   outline: none;
   padding: 0px 6px;
   text-align: center;
-  width: 130px;
+  width: 150px;
+  font-size: 1em;
 }
 .looking-map form > div:last-child {
   background-color: #F6F6F6;
@@ -198,9 +229,6 @@ header div:first-child {
 .menu .titre {
   display: flex;
   justify-content: space-between;
-}
-.menu .titre i {
-  font-size: 2em;
 }
 .menu .titre h1 {
   font-family: "Shrikhand", cursive;
@@ -314,7 +342,6 @@ header div:first-child {
 }
 .card:hover .card--header {
   transition: width 0.5s;
-  width: 80%;
 }
 .card:hover .card--animation-checked {
   transition: width 0.5s;
@@ -366,13 +393,6 @@ header div:first-child {
   font-weight: 900;
   margin-bottom: 3px;
 }
-.restaurant a > span i {
-  align-items: center;
-  display: flex;
-  font-size: 1.4em;
-  padding-bottom: 10px;
-  padding-right: 15px;
-}
 
 footer {
   background-color: #353535;
@@ -398,7 +418,87 @@ footer li > i {
 footer a {
   color: #FFF;
 }
+footer a:hover {
+  text-decoration: underline;
+}
 
+/************************
+ *		RESPONSIVE		*
+ ************************/
+/* Reponsive Tablette */
+@media screen and (min-width: 768px) {
+  header div:first-child img {
+    width: 30%;
+  }
+
+  .fonctionnement > div, .menu > div {
+    width: 70%;
+    margin: auto;
+  }
+
+  .restaurant > div {
+    width: 70%;
+  }
+
+  footer > div {
+    width: 70%;
+  }
+}
+/* Reponsive Desktop */
+@media screen and (min-width: 992px) {
+  .heading-img {
+    height: 30vh;
+  }
+
+  header div:first-child img {
+    width: 10%;
+  }
+
+  main.main section {
+    border-radius: initial;
+  }
+
+  .fonctionnement > div {
+    width: 30%;
+  }
+
+  .menu .animation-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu .animation-cards div {
+    width: 30%;
+  }
+
+  .restaurant > div {
+    width: 60%;
+  }
+  .restaurant > div > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .restaurant > div > div a {
+    width: 48%;
+    height: 250px;
+    margin-bottom: 4%;
+  }
+
+  footer > div {
+    width: 60%;
+  }
+}
+/************************
+ *		ANIMATION		*
+ ************************/
+@keyframes heart-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes rotateCheck {
   0% {
     transform: rotate(0);
@@ -418,9 +518,11 @@ footer a {
 @keyframes btn-transition {
   from {
     transform: scale(1);
+    background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
   }
   to {
     transform: scale(1.1);
+    background: linear-gradient(to top, #863EDC, #FE5DD2);
   }
 }
 @keyframes opacity {

@@ -341,14 +341,17 @@ header div:first-child {
   font-size: 1.5em;
 }
 .card:hover .card--header {
-  transition: width 0.5s;
+  transition: all 0.5s;
 }
 .card:hover .card--animation-checked {
-  transition: width 0.5s;
+  transition: all 0.5s;
   width: 20%;
 }
 .card:hover .card--animation-checked i {
   animation: rotateCheck 0.5s 0.05s;
+}
+.card:hover .card--header {
+  width: 80%;
 }
 
 .restaurant > div {

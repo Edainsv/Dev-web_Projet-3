@@ -388,16 +388,19 @@ header {
 
 	&:hover {
 		.card--header {
-			transition: width .5s;
+			transition: all .5s;
 		}
 
 		.card--animation-checked {
-			transition: width .5s;
+			transition: all .5s;
 			width: 20%;
 
 			i {
 				animation: rotateCheck .5s .05s;
 			}
+		}
+		.card--header {
+			width: 80%;
 		}
 	}
 }
